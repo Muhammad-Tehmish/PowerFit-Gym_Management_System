@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In | PowerFit Gym</title> 
+
+    <link rel="stylesheet" href="/static/stylesheets/signin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&  display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <span class="bg__blur"></span>
+    <span class="bg__blur footer__blur"></span>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+            <h2><span>Power</span>Fit</h2>
+
+            <div class="btn-container">
+                <div id="btn"></div>
+
+                <button class="toggle-btn">Login</button>
+                <button class="toggle-btn">Admin</button>
+
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-google-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+
+            <form id="login" name="signin" class="input-fields" method="POST">
+                {% csrf_token %}
+                <input type="email" class="field" name="email" placeholder="Enter Your Email" required>
+                <input type="password" class="field" name="password" placeholder="Enter Password" required>
+                <a>Forgot Password?</a>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

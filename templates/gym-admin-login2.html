@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html>    
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="/static/stylesheets/global3.css" />
+    <link rel="stylesheet"  href="/static/stylesheets/gym-admin-login.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  
+    </head>
+    <body>
+    
+    <div class="gym-admin">
+      <div class="background">
+        <main class="background-child">
+        </main>
+        <img class="small-redcircle-icon" alt="" src="/static/public/smallredcircle.png">
+        
+        <img class="smallest-redcircle-icon" alt="" src="/static/public/smallestredcircle.png">
+        
+        <img class="big-redcircle-icon" alt="" src="/static/public/bigredcircle.png">
+      
+      </div>
+      <div class="gym-admin-inner">
+        <p class="group-wrapper">
+          <div class="login-card-parent">
+            <div class="login-card">
+              <img class="card-icon" alt="" src="/static/public/card.png">
+
+            <!-- Login Form Starts Here -->
+            <form method="POST"> 
+              {% csrf_token %}
+              <div class="email-parent">
+                <h4 class="email">EMAIL</h4>
+                <input class="email-input" type="email" name="email" placeholder="Enter Your Email Address" maxlength minlength required>
+                
+              </div>
+              <div class="login-card-inner">
+                <div class="password-parent">
+                  <h4 class="password">PASSWORD</h4>
+                  <input class="email-input" type="password" name="password" placeholder="Enter Your Password" maxlength minlength required>
+                </div>
+              </div>
+
+              <button type="submit" class="log-in-button">
+                <img class="log-in-button-child" alt="" src="/static/public/vector-1.svg">
+                
+                <div class="log-in-wrapper">
+                  <div class="log-in">Log In</div>
+                </div>
+              </button>
+            </form> 
+                 
+            <!-- End of Login Form -->
+            
+              <button class="logo">
+                <b class="powerfit">
+                  <span class="power">Power</span>
+                  <span class="fit">Fit</span>
+                </b>
+              </button>
+            </div>
+            <div class="frame-parent">
+              <div class="log-in-container">
+                <h2 class="log-in1">LOG IN</h2>
+              </div>
+              <h2 class="gym-admin1">Gym-Admin</h2>
+            </div>
+          </div>
+        </p>
+      </div>
+      <img class="group-icon" alt="" src="/static/public/group.svg">
+      
+    </div>
+    </body>  
+  </html>

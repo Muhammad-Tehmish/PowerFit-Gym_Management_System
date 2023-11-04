@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit Gym</title>
+
+    <link rel="stylesheet" href="/static/stylesheets/index.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&  display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <a href="#top" class="uparrow"><i class="ri-arrow-up-circle-fill"></i></a>
+
+    <nav id="top">
+        <div class="nav__logo">
+            <a href="#"><h2><span>Power</span>Fit</h2></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About</a></li>
+            <li class="link"><a href="#pricing">Pricing</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+        </ul>
+    
+        <button class="btn" onclick="window.location.href='{% url 'signin' %}'">Join Now</button>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+        <div class="header__content">
+          <span class="bg__blur"></span>
+          <span class="bg__blur header__blur"></span>
+          <h4>BEST GYM IN TOWN</h4>
+          <h1><span>EMPOWER</span> YOUR STRENGTH WITHIN</h1>
+          <p>
+            Step into our world, where the weights you lift and the miles you run are not just physical challenges but opportunities to tap into your true strength.
+          </p>
+          <button class="btn" onclick="window.location.href='{% url 'signin' %}'">Login</button>
+          <button class="btn" onclick="window.location.href='{% url 'signin' %}'">Get Started</button>
+        </div>
+        <div class="header__image">
+          <img src="/static/public/PIC1.png" alt="header" />
+        </div>
+    </header>
+
+    <section class="section__container explore__container">
+        <div class="explore__header">
+            <h2 class="section__header">Testemonials</h2>
+            <div class="explore__nav">
+                <span><i class="ri-arrow-left-line"></i></span>
+                <span><i class="ri-arrow-right-line"></i></span>
+            </div>
+        </div>
+
+        <div class="explore__grid">
+            <div class="explore__card">
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <p>"I lost over 50 pounds at PowerFit! The trainers are amazing and the equipment is top-notch. Furthermore the atmosphere is also very clean and peaceful."</p>
+                <h4>- Sarah J.</h4>
+            </div>
+
+            <div class="explore__card">
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-half-s-fill"></i></span>
+                <p>"I've been a member of PowerFit for over a year and I've never felt better. The group fitness classes are challenging but fun, and the weight machines have helped me get stronger."</h4>
+                <h4>- John D</p>
+            </div>
+
+            <div class="explore__card">
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <p>"As a professional athlete, I need to be in top physical condition. PowerFit has helped me stay at the top of my game with their expert training and state-of-the-art equipment."</h4>
+                <h4>- Michael S</p>
+            </div>
+
+            <div class="explore__card">
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-line"></i></span>
+                <p>"PowerFit has helped me achieve my fitness goals and I feel better than ever. The staff is friendly and supportive, and the gym is always clean and well-maintained."</p>
+                <h4>- Jessica L.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+        <div class="about__image">
+            <span class="bg__blur"></span>
+            <img src="/static/public/pic2.png" alt="">
+        </div>
+
+        <div class="about__content">
+            <h2 class="section__header">About Us</h2>
+            <p>
+                PowerFit Gym was founded in 2010 by a group of fitness enthusiasts who were passionate about helping people achieve their fitness goals.PowerFit Gym is known for its wide range of membership options and classes, as well as its state-of-the-art facilities. Over the years, we helped millions of people in achieving their fitness goals. The gym has also been recognized for its contributions to the fitness industry, winning numerous awards and accolades.
+            </p>
+            <p>
+                The gym offers a wide range of services and amenities to help its members reach their fitness goals, and its friendly and knowledgeable staff is always on hand to help.
+            </p>
+            <button class="btn">Learn More About Us</button>
+        </div>
+    </section>
+
+    <section class="section__container pricing__container">
+        <h2 class="section__header" id="pricing">Pricing Plans</h2>
+        <p class="section__subheader">
+            Choose the monthly plan that's right for you and start your journey to a healthier and happier life today!
+        </p>
+
+        <div class="price__grid">
+
+            <div class="price__card">
+                <div class="price__card__content">
+                    <h4>Basic Plan</h4>
+                    <h3>$20</h3>
+
+                    <p><i class="ri-check-fill"></i>
+                    Personal Training</p>
+
+                    <p><i class="ri-check-fill"></i>
+                        Wieght Loss</p>
+
+                    <p><i class="ri-close-line"></i>
+                        Wieght Lifting</p>
+
+                    <p><i class="ri-close-line"></i>
+                        Cardio Exercises</p>
+
+                    <p><i class="ri-check-fill"></i>
+                        Diet Plans</p>
+
+                    <p><i class="ri-close-line"></i>
+                        Doctor's Consultance</p>
+
+                    <button class="price__button">Select Plan</button>
+                </div>
+
+            </div>
+            <span class="bg__blur"></span>
+
+            <div class="price__card">
+                
+                <div class="price__card__content">
+                    <h4>Standard Plan</h4>
+                    <h3>$30</h3>
+
+                    <p><i class="ri-check-fill"></i>
+                    Personal Training</p>
+
+                    <p><i class="ri-check-fill"></i>
+                        Wieght Loss</p>
+
+                    <p><i class="ri-check-fill"></i>
+                        Wieght Lifting</p>
+
+                    <p><i class="ri-check-fill"></i>
+                        Cardio Exercises</p>
+
+                    <p><i class="ri-check-fill"></i>
+                        Diet Plans</p>
+
+                    <p><i class="ri-close-line"></i>
+                        Doctor's Consultance</p>
+
+                    <button class="price__button">Select Plan</button>
+                    
+                </div>
+
+            </div>
+            
+
+            <div class="price__card">
+
+                <div class="price__card__content">
+                    <h4>Premium Plan</h4>
+                    <h3>$45</h3>
+    
+                    <p><i class="ri-check-fill"></i>
+                    Personal Training</p>
+    
+                    <p><i class="ri-check-fill"></i>
+                        Wieght Loss</p>
+    
+                    <p><i class="ri-check-fill"></i>
+                        Wieght Lifting</p>
+    
+                    <p><i class="ri-check-fill"></i>
+                        Cardio Exercises</p>
+    
+                    <p><i class="ri-check-fill"></i>
+                        Diet Plans</p>
+    
+                    <p><i class="ri-check-fill"></i>
+                        Doctor's Consultance</p>
+    
+                    <button class="price__button">Select Plan</button>
+                    <span class="bg__blur"></span>
+                </div>
+    
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <div class="section__container contact__container">
+            <div class="contact__image">
+                <img src="/static/public/pic3.png" alt="">
+            </div>
+    
+            <div class="contact__content">
+                <h2 class="section__header">Contact Us</h2>
+    
+                <form action="">
+    
+                    <h4 class="input__const">NAME</h4>
+    
+                    <input class="input__field" type="text" placeholder="Enter Your Name" />
+    
+                    <h4 class="input__const">EMAIL</h4>
+    
+                    <input class="input__field" type="email" placeholder="Enter Your Email"/>
+                    
+                    <h4 class="input__const">MESSAGE</h4>
+                    
+                    <textarea class="text__field" placeholder="Enter your Message"></textarea>
+            
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+    
+            </div>
+        </div>
+    </section>
+
+    <footer class="section__container footer__container">
+        <span class="bg__blur"></span>
+        <span class="bg__blur footer__blur"></span>
+
+        <div class="footer__col">
+            <h2><span>Power</span>Fit</h2>
+            <p>We're more than just a gym - we're a community of people who are passionate about fitness and supporting each other on their journey to a healthier lifestyle.</p>
+
+            <div class="footer__socials">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+            </div>
+        </div>
+
+        <div class="footer__col">
+            <h4>About Us</h4>
+            <a href="">Blogs</a>
+            <a href="">Careers</a>
+            <a href="">Security</a>
+        </div>
+
+        <div class="footer__col">
+            <h4>Company</h4>
+            <a href="">Business</a>
+            <a href="">Partnership</a>
+            <a href="">Contact</a>
+            <a href="">Terms & Conditions</a>
+        </div>
+
+        <div class="footer__col">
+            <h4>Contact</h4>
+            <a href="">+1 925 4368 996</a>
+            <a href="">powerfit@gmail.com</a>
+            <a onclick="window.location.href='{% url 'adminlogin' %}'" style="cursor: pointer;">Admin Login</a>
+        </div>
+    </footer>
+
+    <div class="footer__bar">
+        Copyright © 2023 Muhammad Tehmish | All rights reserved.
+    </div>
+
+</body>
+</html>

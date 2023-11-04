@@ -1,0 +1,36 @@
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Plan</title>
+    <link rel="stylesheet" href="{% static 'bjp/css/bootstrap.css' %}">
+
+</head>
+
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-8 offset-2">
+                <h4 class="text-center alert alert-info" style="background-color: red; color: white;"><strong>Update Plan
+                        Price</strong></h4>
+                <form action="" method="POST" style="color: white; font-size: 25px;">
+                    {% csrf_token %}
+                    {{form_upd}}
+                    
+                    <input value="Update" type="submit" value="" class="btn btn-warning" style="position: relative; top: 20px; left: 320px;" >
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{% static 'bjp/js/jquery.js' %}"></script>
+    <script src="{% static 'bjp/js/popper.js' %}"></script>
+    <script src="{% static 'bjp/js/bootstrap.js' %}"></script>
+
+</body>
+
+</html>
