@@ -1,0 +1,242 @@
+
+:root {
+    --primary-color-1: #111317;
+    --primary-color-2: #1f2125;
+    --primary-color-3: #35373b;
+    --secondary-color-1: #ff0000;
+    --secondary-color-2: #bb0000;
+    --text-light: #d1d5db;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color-1);
+}
+
+::selection {
+    color: white;
+    background: var(--secondary-color-1);
+}
+
+.bg__blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 80px var(--secondary-color-1);
+}
+
+.footer__blur {
+    bottom: 0;
+    right: 0;
+}
+
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 23.75rem;
+    height: 30rem;
+    position: relative;
+    margin: 6% auto;
+    background-color: var(--primary-color-3);
+    padding: 5px;
+    overflow: hidden;
+    user-select: none;
+    box-shadow: 0 0 15px var(--secondary-color-1);
+    border-radius: 0.625rem;
+    border: none;
+}
+
+.container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: -1.25rem;
+    margin-top: 0.625rem;
+}
+
+.container h2 span{
+    color: var(--secondary-color-1);
+}
+
+.btn-container  {
+    width: 13.75rem;
+    margin: 2.188rem auto;
+    position: relative;
+    box-shadow: 0 0 20px 4px var(--secondary-color-1);
+    border-radius: 1.875rem;
+}
+
+.toggle-btn {
+    margin: 0.625rem 1.875rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 7.5rem;
+    height: 100%;
+    background: linear-gradient(to right, var(--secondary-color-1), var(--secondary-color-2));
+    border-radius: 1.875rem;
+    transition: 0.5s;
+}
+
+.social-icons {
+    margin: 1.25px auto;
+    text-align: center;
+}
+
+.social-icons a{
+    color: var(--secondary-color-1);
+    background-color: white;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0 7px;
+    padding-top: 4px;
+}
+
+.social-icons a:hover {
+    color: white;
+    background-color: var(--secondary-color-1);
+    box-shadow: 0 0 20px 0 var(--secondary-color-1);
+}
+
+.input-fields {
+    top: 190px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--secondary-color-1);
+    outline: none;
+    background: transparent;
+    font-size: 0.875rem;
+    color: white;
+}
+
+.field::placeholder {
+    color: var(--text-light);
+}
+
+.submit-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 85%;
+    background-color: white;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: var(--secondary-color-1);
+    transition: 0.15s;
+    font-size: 0.875rem;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, var(--secondary-color-1), var(--secondary-color-2));
+    color: white;
+    box-shadow: 0 0 15px 0 var(--secondary-color-1);
+}
+
+form a {
+    font-size: 12px;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: end;
+}
+
+form a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+#membership-plan {
+    color: white;
+    background-color: var(--primary-color-2);
+    padding: 5px 49px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+
+@media (width < 500px) {
+    .container {
+        margin-top: 35%;
+        width: 20rem;
+        height: 27rem;
+        border-radius: 0.625rem;
+    }
+
+    .input-fields {
+        top: 180px;
+        width: 220px;
+    }
+
+    #membership-plan {
+        padding: 5px 19px;
+        margin-top: 5px;
+        border-radius: 20px;
+    }
+
+    .field {
+        padding: 5px 0;
+        margin-top: 10px;
+    }
+
+    .submit-btn {
+        padding: 10px 25px;
+        margin-top: 15px;
+    }
+
+    .social-icons a{
+        margin: 0 10px;
+    }
+
+    .social-icons {
+        margin: -8px auto;
+    }
+
+}

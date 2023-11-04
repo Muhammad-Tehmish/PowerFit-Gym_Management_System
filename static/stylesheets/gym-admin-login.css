@@ -1,0 +1,291 @@
+.background-child {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #111315;
+  height: 728px;
+}
+.big-redcircle-icon,
+.small-redcircle-icon,
+.smallest-redcircle-icon {
+  position: absolute;
+  width: 10.7%;
+  top: 492.29px;
+  right: 69.21%;
+  left: 20.09%;
+  border-radius: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 154.04px;
+  object-fit: cover;
+}
+.big-redcircle-icon,
+.smallest-redcircle-icon {
+  width: 6.39%;
+  top: 106.99px;
+  right: 60.62%;
+  left: 32.99%;
+  height: 92.02px;
+}
+.big-redcircle-icon {
+  width: 22.36%;
+  top: 65px;
+  right: 28.54%;
+  left: 45.1%;
+  height: 322px;
+}
+.smallest-redcircle-icon{
+  left: 24%;
+}
+.small-redcircle-icon {
+  left: 15.5%;
+  top: 530px;
+}
+.background,
+.card-icon {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 728px;
+}
+.card-icon {
+  height: 88.27%;
+  width: 98.2%;
+  right: 1.8%;
+  bottom: 11.73%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.email {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  width: 80px;
+  height: 31px;
+  flex-shrink: 0;
+}
+.email-input {
+  border: 1px solid red;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-xl);
+  background-color: transparent;
+  position: relative;
+  width: 437px;
+  height: 42px;
+  color: white;
+}
+.email-parent {
+  position: absolute;
+  top: 138px;
+  left: 88px;
+  width: 437px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.password {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  width: 138px;
+  height: 31px;
+  flex-shrink: 0;
+}
+.login-card-inner,
+.password-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.password-parent {
+  align-items: flex-start;
+  gap: var(--gap-11xs);
+}
+.login-card-inner {
+  position: absolute;
+  top: 226px;
+  left: 88px;
+  align-items: flex-end;
+}
+.log-in-button-child {
+  position: absolute;
+  width: 100%;
+  top: 8px;
+  right: -0.27%;
+  left: 0.27%;
+  border-radius: 1px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 35px;
+}
+.log-in {
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.log-in-wrapper {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  width: 91px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.log-in-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 16.02%;
+  top: 337px;
+  right: 61.8%;
+  left: 22.18%;
+  height: 49px;
+}
+.power {
+  color: var(--color-white);
+}
+.fit {
+  color: var(--color-red);
+}
+.powerfit {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  font-size: var(--font-size-11xl);
+  display: inline-block;
+  font-family: var(--font-inter);
+  text-align: left;
+  width: 150px;
+}
+.login-card,
+.logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.logo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 6.61%;
+  top: 93.39%;
+  width: 150px;
+}
+.login-card {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.log-in1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.log-in-container {
+  width: 187px;
+  height: 71px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
+}
+.gym-admin1 {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-11xl);
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-red);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.frame-parent {
+  position: absolute;
+  width: calc(100% - 868px);
+  top: 7px;
+  right: 643px;
+  left: 225px;
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+.login-card-parent {
+  position: absolute;
+  height: 1302.78%;
+  width: 564.17%;
+  top: -216.67%;
+  right: -343.85%;
+  bottom: -986.11%;
+  left: -120.32%;
+}
+.group-wrapper,
+.gym-admin-inner {
+  position: absolute;
+  width: 187px;
+  height: 36px;
+}
+.group-wrapper {
+  margin: 0;
+  top: 0;
+  left: calc(50% - 93.5px);
+}
+.gym-admin-inner {
+  top: 240px;
+  left: calc(50% - 281px);
+}
+.group-icon {
+  position: absolute;
+  height: 26.37%;
+  width: 12.56%;
+  top: 36.81%;
+  right: 21.61%;
+  bottom: 36.81%;
+  left: 65.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.gym-admin {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 728px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

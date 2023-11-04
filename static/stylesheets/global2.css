@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-3xl: 22px;
+
+  /* Colors */
+  --color-white: #fff;
+
+  /* Gaps */
+  --gap-11xs: 2px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+}
